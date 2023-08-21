@@ -4,6 +4,10 @@ server:
 spring:
   application:
     name: eureka-server
+  cloud:
+    config:
+      import-check:
+        enabled: false
 
 eureka:
   client:
@@ -11,4 +15,6 @@ eureka:
       default-zone: http://localhost:8761/eureka
     register-with-eureka: false
     fetch-registry: false
+
+
 

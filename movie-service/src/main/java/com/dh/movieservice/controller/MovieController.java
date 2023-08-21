@@ -30,4 +30,14 @@ public class MovieController {
     ResponseEntity<Movie> saveMovie(@RequestBody Movie movie) {
         return ResponseEntity.ok().body(movieService.save(movie));
     }
+
+    @GetMapping("/all")
+    ResponseEntity<List<Movie>> getAllMovie(@PathVariable String genre) {
+        return ResponseEntity.ok().body(movieService.findAll());
+    }
+
+    @GetMapping("/saluda")
+    public ResponseEntity<String> saludar(){
+        return ResponseEntity.ok().body("hola");
+    }
 }
