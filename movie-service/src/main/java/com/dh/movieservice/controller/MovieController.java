@@ -38,6 +38,6 @@ public class MovieController {
 
     @GetMapping("/saluda")
     public ResponseEntity<String> saludar(){
-        return ResponseEntity.ok().body("hola");
+        return ResponseEntity.ok().body(movieService.saludar());
     }
 }

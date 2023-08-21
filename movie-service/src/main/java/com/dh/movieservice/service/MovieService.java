@@ -30,4 +30,8 @@ public class MovieService {
     public List<Movie> findAll() {
         return movieRepository.findAll();
     }
+
+    public String saludar(){
+        return "Hola desde Movie-Service";
+    }
 }

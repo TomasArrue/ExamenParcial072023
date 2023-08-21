@@ -10,6 +10,6 @@ import org.springframework.stereotype.Service;
 public class CatalogService {
 
     public String saludar(){
-        return "Hola";
+        return "Hola desde Catalog-Service";
     }
 }
