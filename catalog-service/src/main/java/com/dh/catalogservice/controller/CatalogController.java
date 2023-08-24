@@ -29,7 +29,7 @@ public class CatalogController {
 
     public CatalogController(CatalogService catalogService){ this.catalogService = catalogService; }
 
-    @GetMapping("catalogo/{genre}")
+    @GetMapping("/{genre}")
     public ResponseEntity<List<Movie>> getCatalogByGenre(@PathVariable String genre){
         return iMovieClient.getMovieByGenre(genre);
     }
